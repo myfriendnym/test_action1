@@ -1,0 +1,14 @@
+name:Run Python
+on:
+    push:
+
+jobs:
+    build:
+        name: run py1
+        runs-on: unbuntu-latest
+        step:
+            -uses: actions/checkout@v2
+            -name: Run Python
+             run:
+                python3 test.py # test
+                
